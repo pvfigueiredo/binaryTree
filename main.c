@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-const int SIZE = 1;
-
 typedef struct Node{
     int item;
 
@@ -20,8 +18,6 @@ Node * createNode(int item){
 
   return node;
 }
-
-
 
 Node * insertLeft(int item, Node* node){
   node->left = createNode(item);
